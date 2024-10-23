@@ -2,13 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "modern-normalize";
 import "./index.css";
-import { Container, Section } from "./components";
+import { AppBar, Container, Section, TaskForm, TaskList } from "./components";
 
 const App = () => {
   return (
-    <Section>
-      <Container></Container>
-    </Section>
+    <Container>
+      <Section>
+        <AppBar />
+        <TaskForm />
+        <TaskList />
+      </Section>
+    </Container>
   );
 };
 
